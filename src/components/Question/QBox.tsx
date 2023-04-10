@@ -15,7 +15,9 @@ const QBox: React.FC = () => {
 
   return (
     <>
-      <div>{qnaList[qIdx]?.q}</div>
+      <h2 className="w-full p-4 my-10 bg-primary-100 text-white font-tif text-2xl text-center">
+        {qnaList[qIdx]?.q}
+      </h2>
     </>
   )
 }

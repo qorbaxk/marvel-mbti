@@ -5,7 +5,7 @@ import ABox from 'components/Question/ABox'
 
 const Question = () => {
   return (
-    <section className="container">
+    <section className="container justify-center">
       <StatusBar />
       <QBox />
       <ABox />
