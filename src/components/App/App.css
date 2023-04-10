@@ -9,3 +9,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-scr p-4 flex flex-col min-h-screen h-full bg-secondary-100 items-center;
+  }
+}

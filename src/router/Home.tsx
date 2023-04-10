@@ -6,7 +6,7 @@ const Home = () => {
   const navigate = useNavigate()
 
   return (
-    <section className="mx-auto max-w-scr p-4 flex flex-col min-h-screen h-full bg-secondary-100 items-center">
+    <section className="container">
       <h1 className="bg-primary-100 text-white text-center text-4xl p-4 my-6 font-tif">
         어벤져스 입단 테스트
       </h1>
