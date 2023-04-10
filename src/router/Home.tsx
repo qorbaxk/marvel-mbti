@@ -5,6 +5,10 @@ import { useNavigate } from 'react-router-dom'
 const Home = () => {
   const navigate = useNavigate()
 
+  const start = () => {
+    navigate('/question')
+  }
+
   return (
     <section className="container">
       <h1 className="bg-primary-100 text-white text-center text-4xl p-4 my-6">
@@ -15,7 +19,7 @@ const Home = () => {
         role="button"
         aria-label="테스트 시작하기 버튼"
         className="p-4 border-2 border-primary-100 border-solid my-6 text-lg text-center min-w-[80%] hover:bg-primary-100 hover:text-secondary-100 transition-all duration-300"
-        onClick={() => navigate('/question')}
+        onClick={start}
       >
         입단하기
       </button>
