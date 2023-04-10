@@ -17,11 +17,11 @@ const ABox: React.FC = () => {
     dispatch(getIndex(qIdx + 1))
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     if (qIdx === endPoint) {
       navigate('/result')
     }
-  },[qIdx])
+  }, [qIdx])
 
   return (
     <div className="grow">
@@ -29,7 +29,7 @@ const ABox: React.FC = () => {
         <button
           role="button"
           key={idx}
-          className="w-full p-4 border-2 border-primary-100 border-solid bg-white text-justify my-4 text-lg font-tif hover:bg-primary-100 hover:text-white transition-all duration-300 "
+          className="w-full p-4 border-2 border-primary-100 border-solid bg-white text-justify my-4 text-lg hover:bg-primary-100 hover:text-white transition-all duration-300 "
           onClick={() => goNext(idx)}
         >
           {el.answer}

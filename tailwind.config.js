@@ -14,8 +14,7 @@ module.exports = {
         contentText: '#212121',
       },
       fontFamily: {
-        sans: ['Pretendard', 'sans-serif'],
-        tif: ['SBAggroB', 'sans-serif'],
+        sans: ['SBAggro', 'sans-serif'],
       },
       maxWidth: {
         scr: '31.25rem',
