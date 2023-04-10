@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import { resetCount } from 'redux/slice/QuestionSlice'
+import ShareBtn from './ShareBtn'
 
 const ResultBtn = () => {
   const navigate = useNavigate()
@@ -15,12 +16,7 @@ const ResultBtn = () => {
 
   return (
     <div className="w-full flex flex-row justify-around items-center mb-4">
-      <button
-        role="button"
-        className="p-4 bg-secondary-300 hover:bg-black hover:text-secondary-300 transition-all duration-300"
-      >
-        공유하기
-      </button>
+      <ShareBtn/>
       <button
         role="button"
         className="p-4 bg-secondary-200 hover:bg-primary-100 hover:text-white transition-all duration-300"
