@@ -1,8 +1,13 @@
+import MyCharacter from 'components/Result/MyCharacter'
+import ResultBtn from 'components/Result/ResultBtn'
 import React from 'react'
 
-const Result = () => {
+const Result: React.FC = () => {
   return (
-    <div>Result</div>
+    <section className="container gap-4">
+      <MyCharacter />
+      <ResultBtn />
+    </section>
   )
 }
 

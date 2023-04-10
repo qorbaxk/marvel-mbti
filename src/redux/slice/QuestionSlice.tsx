@@ -20,9 +20,12 @@ export const questionSlice = createSlice({
     plusCount: (state, action) => {
       state.selected[action.payload] += 1
     },
+    resetCount: state => {
+      state.selected = initialState.selected
+    },
   },
 })
 
-export const { getIndex, plusCount } = questionSlice.actions
+export const { getIndex, plusCount, resetCount } = questionSlice.actions
 
 export default questionSlice.reducer

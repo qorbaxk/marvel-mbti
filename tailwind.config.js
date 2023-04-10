@@ -10,12 +10,12 @@ module.exports = {
         secondary: {
           100: '#F7F7F9',
           200: '#FFE8F5',
+          300: '#fee500',
         },
         contentText: '#212121',
       },
       fontFamily: {
-        sans: ['Pretendard', 'sans-serif'],
-        tif: ['SBAggroB', 'sans-serif'],
+        sans: ['SBAggro', 'sans-serif'],
       },
       maxWidth: {
         scr: '31.25rem',
