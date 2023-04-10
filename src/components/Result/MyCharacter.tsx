@@ -10,8 +10,10 @@ const MyCharacter: React.FC = () => {
 
   return (
     <>
-      <p>{infoList[point].ex}</p>
-      <h2>{infoList[point].name}</h2>
+      <div className="bg-primary-100 text-center p-4 w-[80%]">
+        <p className="text-sm">{infoList[point].ex}</p>
+        <h2 className="text-white text-4xl my-4">{infoList[point].name}</h2>
+      </div>
       <figure>
         <div
           style={{
@@ -21,7 +23,9 @@ const MyCharacter: React.FC = () => {
             height: `${infoList[point].height}`,
           }}
         ></div>
-        <figcaption>{infoList[point].desc}</figcaption>
+        <figcaption className="font-light text-justify border-b-2 border-primary-100  border-solid py-4">
+          {infoList[point].desc}
+        </figcaption>
       </figure>
     </>
   )
