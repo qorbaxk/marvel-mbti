@@ -1,12 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { RootState } from 'redux/store'
 
 const StatusBar = () => {
   const endPoint = 12
   const qIdx = useSelector((QueState: RootState) => QueState.qr.questionIndex)
-
-  const percent = (100 / endPoint) * (qIdx + 1)
+  const progress = Math.floor((100 / endPoint) * (qIdx + 1))
 
   return (
     <>
@@ -20,7 +19,7 @@ const StatusBar = () => {
       <div aria-hidden className="w-full h-4 mx-auto bg-white">
         <div
           aria-hidden
-          className={`h-full bg-primary-100 w-[${percent}%]`}
+          className={`h-full bg-primary-100 w-[${progress}%]`}
         ></div>
       </div>
     </>
