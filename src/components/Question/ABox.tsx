@@ -19,7 +19,7 @@ const ABox: React.FC = () => {
 
   useEffect(()=>{
     if (qIdx === endPoint) {
-      navigate('/result/1')
+      navigate('/result')
     }
   },[qIdx])
 
