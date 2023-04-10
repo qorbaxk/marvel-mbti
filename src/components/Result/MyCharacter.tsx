@@ -14,7 +14,7 @@ const MyCharacter: React.FC = () => {
         <p className="text-sm">{infoList[point].ex}</p>
         <h2 className="text-white text-4xl my-4">{infoList[point].name}</h2>
       </div>
-      <figure className="grow">
+      <figure className="grow mt-10">
         <div
         className="mx-auto"
           style={{
