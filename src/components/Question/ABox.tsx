@@ -2,14 +2,17 @@ import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from 'redux/store'
-import { qnaList } from 'data/data'
 import { getIndex, plusCount } from 'redux/slice/QuestionSlice'
+import { qnaList } from 'data/data'
+import { infoList } from 'data/data'
 
 const ABox: React.FC = () => {
   const navigate = useNavigate()
-  const endPoint = 12
   const dispatch = useDispatch()
+  const endPoint = 12
   const qIdx = useSelector((QueState: RootState) => QueState.qr.questionIndex)
+  const selected = useSelector((QueState: RootState) => QueState.qr.selected)
+  const point = selected.indexOf(Math.max(...selected))
 
   const goNext = (idx: number) => {
     const target = qnaList[qIdx].a[idx].type
@@ -19,7 +22,7 @@ const ABox: React.FC = () => {
 
   useEffect(() => {
     if (qIdx === endPoint) {
-      navigate('/result')
+      navigate(`/result/${infoList[point].id}`)
     }
   }, [qIdx])
 
