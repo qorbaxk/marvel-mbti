@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router'
 import { qnaList } from 'data/data'
 import { useSelector } from 'react-redux'
@@ -9,9 +9,11 @@ const QBox: React.FC = () => {
   const endPoint = 12
   const qIdx = useSelector((QueState: RootState) => QueState.qr.questionIndex)
 
-  if (qIdx === endPoint) {
-    navigate('/result/1')
-  }
+  useEffect(()=>{
+    if (qIdx === endPoint) {
+      navigate('/result/1')
+    }
+  },[qIdx])
 
   return (
     <>

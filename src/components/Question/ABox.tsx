@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useNavigate } from 'react-router'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootState } from 'redux/store'
 import { qnaList } from 'data/data'
 import { getIndex, plusCount } from 'redux/slice/QuestionSlice'
 
 const ABox: React.FC = () => {
+  const navigate = useNavigate()
+  const endPoint = 12
   const dispatch = useDispatch()
   const qIdx = useSelector((QueState: RootState) => QueState.qr.questionIndex)
 
@@ -14,9 +17,15 @@ const ABox: React.FC = () => {
     dispatch(getIndex(qIdx + 1))
   }
 
+  useEffect(()=>{
+    if (qIdx === endPoint) {
+      navigate('/result/1')
+    }
+  },[qIdx])
+
   return (
     <div className="grow">
-      {qnaList[qIdx].a?.map((el, idx) => (
+      {qnaList[qIdx]?.a.map((el, idx) => (
         <button
           role="button"
           key={idx}
