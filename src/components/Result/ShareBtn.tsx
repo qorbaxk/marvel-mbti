@@ -40,7 +40,6 @@ const ShareBtn = () => {
 
   useEffect(() => {
     window.Kakao.init(process.env.REACT_APP_API_KEY)
-    console.log(window.Kakao.isInitialized())
   }, [])
 
   return (
