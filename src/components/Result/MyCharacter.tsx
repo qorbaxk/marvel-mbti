@@ -14,8 +14,9 @@ const MyCharacter: React.FC = () => {
         <p className="text-sm">{infoList[point].ex}</p>
         <h2 className="text-white text-4xl my-4">{infoList[point].name}</h2>
       </div>
-      <figure>
+      <figure className="grow">
         <div
+        className="mx-auto"
           style={{
             backgroundImage: `url(${Heroes})`,
             backgroundPosition: `${infoList[point].position}`,
