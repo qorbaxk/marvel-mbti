@@ -1,8 +1,11 @@
+import MyCharacter from 'components/Result/MyCharacter'
 import React from 'react'
 
-const Result = () => {
+const Result: React.FC = () => {
   return (
-    <div>Result</div>
+    <section className="container">
+      <MyCharacter />
+    </section>
   )
 }
 
