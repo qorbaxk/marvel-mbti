@@ -9,9 +9,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/question" element={<Question />} />
-        <Route path="/result/:id" element={<Result />} />
+        <Route path="/marvel-mbti" element={<Home />} />
+        <Route path="/marvel-mbti/question" element={<Question />} />
+        <Route path="/marvel-mbti/result/:id" element={<Result />} />
       </Routes>
     </>
   )

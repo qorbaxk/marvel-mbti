@@ -10,7 +10,7 @@ const ResultBtn = () => {
 
   const reset = () => {
     dispatch(resetCount())
-    navigate('/')
+    navigate('/marvel-mbti')
     location.reload()
   }
 

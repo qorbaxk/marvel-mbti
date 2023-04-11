@@ -6,7 +6,7 @@ const Home = () => {
   const navigate = useNavigate()
 
   const start = () => {
-    navigate('/question')
+    navigate('/marvel-mbti/question')
   }
 
   return (

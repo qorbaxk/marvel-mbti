@@ -22,7 +22,7 @@ const ABox: React.FC = () => {
 
   useEffect(() => {
     if (qIdx === endPoint) {
-      navigate(`/result/${infoList[point].id}`)
+      navigate(`/marvel-mbti/result/${infoList[point].id}`)
     }
   }, [qIdx])
 
