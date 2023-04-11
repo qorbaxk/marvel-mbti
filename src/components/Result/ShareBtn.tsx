@@ -2,17 +2,14 @@ import React, { useEffect } from 'react'
 import { infoList } from 'data/data'
 import { useParams } from 'react-router-dom'
 
-
 const ShareBtn = () => {
-
   const { id } = useParams()
-  const myData = infoList.find((el)=>el.id === Number(id))
-  
+  const myData = infoList.find(el => el.id === Number(id))
 
   const shareTitle = '어벤져스 입단 테스트 결과'
   const shareDesc = `${myData?.ex}, 나는 ${myData?.name}!`
-  const shareImage = 'https://www.tjtoday.org/wp-content/uploads/2019/05/endgame_2.png'
-  const shareURL = location.href
+  const shareImage = `${myData?.link}`
+  const shareURL = `https://qorbaxk-marvel-mbti-test.netlify.app/result/${id}`
 
   const sendKakaoMessage = () => {
     window.Kakao.Link.sendDefault({
