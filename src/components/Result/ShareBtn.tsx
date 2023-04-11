@@ -9,7 +9,7 @@ const ShareBtn = () => {
   const shareTitle = '어벤져스 입단 테스트 결과'
   const shareDesc = `${myData?.ex}, 나는 ${myData?.name}!`
   const shareImage = `${myData?.link}`
-  const shareURL = `https://qorbaxk-marvel-mbti-test.netlify.app/result/${id}`
+  const shareURL = `https://qorbaxk-marvel-mbti-test.netlify.app/share/${id}`
 
   const sendKakaoMessage = () => {
     window.Kakao.Link.sendDefault({
