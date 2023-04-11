@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/marvel-mbti/static/css/main.a6055763.css",
+    "main.js": "/marvel-mbti/static/js/main.955c2fd4.js",
+    "static/media/maincover.gif": "/marvel-mbti/static/media/maincover.d2fb96a72ea915480f90.gif",
+    "static/media/heroes.png": "/marvel-mbti/static/media/heroes.ca16f180a4302ca791b8.png",
+    "index.html": "/marvel-mbti/index.html",
+    "main.a6055763.css.map": "/marvel-mbti/static/css/main.a6055763.css.map",
+    "main.955c2fd4.js.map": "/marvel-mbti/static/js/main.955c2fd4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6055763.css",
+    "static/js/main.955c2fd4.js"
+  ]
+}
