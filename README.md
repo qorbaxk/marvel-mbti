@@ -45,3 +45,9 @@
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white) 
 ![ESlint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=ESLint&logoColor=white) 
+
+## 실행화면
+![실행](https://user-images.githubusercontent.com/97217443/231168075-4c495dfe-122e-43e4-93a0-2fa2bbf2ba52.gif)
+<br>테스트 실행화면<br>
+![image](https://user-images.githubusercontent.com/97217443/231168085-6dfe924e-3094-4c11-81d0-19fb2268a269.png)
+<br>카카오톡 공유하기 전송시 보이는 메세지
