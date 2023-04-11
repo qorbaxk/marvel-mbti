@@ -4,6 +4,7 @@ import './App.css'
 import Home from 'router/Home'
 import Question from 'router/Question'
 import Result from 'router/Result'
+import Sharing from 'router/Sharing'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/question" element={<Question />} />
         <Route path="/result/:id" element={<Result />} />
+        <Route path="/share/:id" element={<Sharing />} />
       </Routes>
     </>
   )
