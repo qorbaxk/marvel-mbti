@@ -10,18 +10,23 @@ const Home = () => {
   }
 
   return (
-    <section className="container">
-      <h1 className="bg-primary-100 text-white text-center text-4xl p-4 my-6">
-        어벤져스 입단 테스트
+    <section className="container justify-center">
+      {' '}
+      <h1 className="w-11/12 bg-primary-100 text-white text-center text-3xl p-4 my-6">
+        <p>어벤져스</p>
+        <p>입단 테스트</p>
       </h1>
-      <img src={Cover} alt="메인 커버 이미지" className="w-2/3 grow" />
+      <img src={Cover} alt="메인 커버 이미지" className="w-10/12 grow" />
       <button
         role="button"
         aria-label="테스트 시작하기 버튼"
-        className="p-4 border-2 border-primary-100 border-solid my-6 text-lg text-center min-w-[80%] hover:bg-primary-100 hover:text-secondary-100 transition-all duration-300"
+        className="p-4 border-2 border-primary-100 border-solid my-6 text-lg text-center w-2/4 hover:bg-primary-100 hover:text-secondary-100 transition-all duration-300 relative"
         onClick={start}
       >
         입단하기
+        <span className="absolute flex h-full w-full top-0 right-0">
+          <span className="animate-ping absolute inline-flex h-full w-full bg-primary-100 opacity-75"></span>
+        </span>
       </button>
     </section>
   )
