@@ -6,12 +6,11 @@ const Home = () => {
   const navigate = useNavigate()
 
   const start = () => {
-    navigate('/question')
+    navigate('/marvel-mbti/question')
   }
 
   return (
     <section className="container justify-center">
-      {' '}
       <h1 className="w-11/12 bg-primary-100 text-white text-center text-3xl p-4 my-6">
         <p>어벤져스</p>
         <p>입단 테스트</p>
@@ -24,8 +23,11 @@ const Home = () => {
         onClick={start}
       >
         입단하기
-        <span className="absolute flex h-full w-full top-0 right-0">
-          <span className="animate-ping absolute inline-flex h-full w-full bg-primary-100 opacity-75"></span>
+        <span aria-hidden className="absolute flex h-full w-full top-0 right-0">
+          <span
+            aria-hidden
+            className="animate-ping absolute inline-flex h-full w-full bg-primary-100 opacity-75"
+          ></span>
         </span>
       </button>
     </section>
