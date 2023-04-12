@@ -31,7 +31,6 @@ const ABox: React.FC = () => {
       {qnaList[qIdx]?.a.map((el, idx) => (
         <button
           role="button"
-          aria-label={`보기 ${idx}번`}
           key={idx}
           className=" w-full grow p-4 border-2 border-primary-100 border-solid bg-white text-justify my-4 text-lg hover:bg-primary-100 hover:text-white transition-all duration-300"
           onClick={() => goNext(idx)}

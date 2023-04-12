@@ -1,53 +1,46 @@
-# 🦸 어벤져스 입단 테스트
-내가 어벤져스라면 어떤 히어로일까? <br>
-유행하는 MBTI 테스트를 마블 히어로 버전으로 만들었습니다.
+# Getting Started with Create React App
 
-![avengers](https://user-images.githubusercontent.com/97217443/231163167-283afd7e-a7f9-4060-8bb4-fa12ab282277.png)
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Available Scripts
 
+In the project directory, you can run:
 
-## 📕 프로젝트 정보
-### 프로젝트 기간
+### `npm start`
 
-![project_start](https://img.shields.io/badge/Project%20start-2022--05--03-green) ![project_end](https://img.shields.io/badge/Project%20end-2023--04--11-orange) 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### 프로젝트 버전
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-📌 [ver 1.0](https://github.com/qorbaxk/Avengers_Heroes_Test)
-<br> HTML과 CSS, Vanilla JS 만을 이용하여 제작한 1.0 버전입니다.<br>
-📌 [ver 2.0](https://github.com/qorbaxk/marvel-mbti)
-<br> React와 RTK, TypeScript, tailwind CSS 를 이용하여 업그레이드한 2.0 버전입니다.
+### `npm test`
 
-### 프로젝트 내용
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-유행하는 MBTI 테스트를 마블 히어로 버전으로 제작하였습니다.<br>
-총 12가지의 질문을 통해 16개의 히어로들중에서 선택됩니다.<br>
-자신의 히어로를 확인할 수 있으며, 카카오톡을 통해 공유할 수 있습니다.<br>
-2.0 으로 업그레이드 하면서, 1.0에서 하지 못한 컴포넌트 재사용성을 높이려고 노력하였습니다.<br>
-디자인도 보라색 계열에서 마블의 대표색인 버건디색으로 변경하였습니다.<br>
-모바일기기에서 접속하는 유저들이 많을 것으로 예상하여 컨텐츠 크기를 모바일 기준으로 맞췄습니다.<br>
+### `npm run build`
 
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-> 🚩 URL : https://qorbaxk-marvel-mbti-test.netlify.app/
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## 🎨 Environment
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Skill
+### `npm run eject`
 
-<div align="left">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Typescript-3178C6?style=flat-square&logo=Typescript&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
-  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?style=flat-square&logo=Tailwind CSS&logoColor=white"/>
-</div>
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=Git&logoColor=white) 
-![ESlint](https://img.shields.io/badge/ESLint-4B32C3?style=flat-square&logo=ESLint&logoColor=white) 
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## 실행화면
-![실행](https://user-images.githubusercontent.com/97217443/231168075-4c495dfe-122e-43e4-93a0-2fa2bbf2ba52.gif)
-<br>테스트 실행화면<br>
-![image](https://user-images.githubusercontent.com/97217443/231168085-6dfe924e-3094-4c11-81d0-19fb2268a269.png)
-<br>카카오톡 공유하기 전송시 보이는 메세지
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).

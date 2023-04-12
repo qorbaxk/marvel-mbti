@@ -21,7 +21,6 @@ const ResetBtn: React.FC<BtnProps> = ({ text }) => {
     <>
       <button
         role="button"
-        aria-label="처음으로 돌아가기"
         className="p-4 bg-secondary-200 hover:bg-primary-100 hover:text-white transition-all duration-300"
         onClick={reset}
       >
